@@ -1,0 +1,11 @@
+include README.md LICENSE kanata_basic.py
+recursive-include kanata/data *.json
+recursive-include packaging *.rules *.desktop
+recursive-include tests *.py *.json
+recursive-include evidence *.md *.json *.bin
+recursive-include docs *.png
+recursive-include tools *.py *.sh *.cs *.csproj
+prune vendor
+prune tools/ildump/bin
+prune tools/ildump/obj
+global-exclude __pycache__ *.py[cod]

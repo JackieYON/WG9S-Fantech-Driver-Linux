@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kanata-basic"
+version = "0.1.0"
+description = "Basic experimental GUI for Fantech Kanata S Wireless WG9S"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.6,<7"]
+
+[project.optional-dependencies]
+dev = ["build>=1"]
+
+[project.scripts]
+kanata-basic = "kanata.__main__:main"
+
+[tool.setuptools]
+py-modules = ["kanata_basic"]
+
+[tool.setuptools.packages.find]
+include = ["kanata*"]
+
+[tool.setuptools.package-data]
+kanata = ["data/*.json"]
+
+[tool.setuptools.data-files]
+"share/kanata-basic" = ["packaging/70-kanata.rules", "packaging/kanata-basic.desktop"]

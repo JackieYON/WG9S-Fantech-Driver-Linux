@@ -1,0 +1,14 @@
+{
+  "vendor/extracted/MouseDriver.exe": {
+    "size": 5318144,
+    "sha256": "7945a90d584999162dfc1484207ea5709dbb8a8c97a91bb3e1b6a5bbd4dbc617"
+  },
+  "vendor/resources-clean/costura64.hidusb.dll": {
+    "size": 125440,
+    "sha256": "be8c8077edf4f1a99c1b6c3e85ad8ae3eaad192bd6bef096b663f8c36383c539"
+  },
+  "vendor/resources-clean/costura32.hidusb32.dll": {
+    "size": 100352,
+    "sha256": "98e8a3a2266818b704b1972d74ceaa45fa470dd6c6f82ac1ae358548508a6ff1"
+  }
+}

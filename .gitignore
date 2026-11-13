@@ -1,0 +1,14 @@
+__pycache__/
+vendor/*
+!vendor/.gitkeep
+captures/
+tools/ildump/bin/
+tools/ildump/obj/
+.venv/
+build/
+dist/
+*.egg-info/
+kanata-read*.json
+/kanata-diagnostics*.json
+/macros.json
+/macro.json

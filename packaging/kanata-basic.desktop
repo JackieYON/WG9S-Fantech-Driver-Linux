@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Kanata WG9S Basic
+Comment=Basic mouse configuration controls (experimental)
+Exec=kanata-basic
+Icon=input-mouse
+Terminal=false
+Categories=Settings;HardwareSettings;
