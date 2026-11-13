@@ -129,6 +129,8 @@ class MacroEditor(QDialog):
         self.playback.currentIndexChanged.connect(lambda: self.repeats.setEnabled(self.playback.currentData() == 0))
         toolbar = QHBoxLayout()
         self.key = QComboBox()
+        self.key.setMaxVisibleItems(12)
+        self.key.setStyleSheet("QComboBox { combobox-popup: 0; }")
         for name in KEYS:
             self.key.addItem(name, KEYS[name])
         toolbar.addWidget(self.key, 1)
@@ -189,6 +191,8 @@ class MacroEditor(QDialog):
         action.setCurrentIndex(action.findData(step.state))
         self.table.setCellWidget(row, 0, action)
         key = QComboBox()
+        key.setMaxVisibleItems(12)
+        key.setStyleSheet("QComboBox { combobox-popup: 0; }")
         for name, value in KEYS.items():
             key.addItem(name, value)
         index = next((i for i in range(key.count())
